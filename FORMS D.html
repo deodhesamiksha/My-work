@@ -1,0 +1,105 @@
+<html>
+<head>
+ <title>form</title>
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+ <ul class="nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Shipping</a></li>
+    <li><a href="#tab2" data-toggle="tab">Quantities</a></li>
+    <li><a href="#tab3" data-toggle="tab">Summary</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+        <p>
+            <h1 align="center">Sells in</h1>
+<form action="">
+<center>
+<input type="button" value="upload images">
+</center>
+<br>
+<br>
+Category:-
+<select name="select">
+<option value="clothing">clothing</option>
+<option value="electronics">electronics</option>
+<option value="home appliances">home appliances</option>
+<option value="travel">travel</option>
+</select> 
+<br>
+<br>
+Add title:-
+<input type="text">
+<br>
+<br>
+Address:- 
+<input type="text"> 
+<br>
+<br>
+City:-
+<select name="select">
+<option value="Pune">Pune</option>
+<option value="Mumbai">Mumbaiu</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Jaipur">Jaipur</option>
+</select>  
+<br>
+<br>
+Locality:-
+<input type="text"> 
+<br>
+<br>
+<br>
+<p><a href="https://www.google.co.in/maps/@18.5246164,73.8629674,12z">Maps
+</a></p>
+<br>
+<br>
+<center>
+<input type="submit" value="Submit">
+<input type="button" value="Reset">
+</center>
+</form>
+        </p>
+        <a class="btn btn-primary btnNext">Next</a>
+    </div>
+    <div class="tab-pane" id="tab2">
+        <p>
+            <h1 align="center">Vendors info</h1>
+<form>
+Name:-
+<input type="text">
+<br>
+<br>
+Email ID:-
+<input type="text">
+<br> 
+<br>
+Contact:-
+<input type="text">
+<br>
+<br>
+<input type="checkbox">I agree the terms and policies
+<br>
+<br>
+<input type="button" value="Post my add">
+</form>
+        </p>
+        <a class="btn btn-primary btnNext">Next</a>
+        <a class="btn btn-primary btnPrevious">Previous</a>
+    </div>
+    <div class="tab-pane" id="tab3">
+        <a class="btn btn-primary btnPrevious">Previous</a>
+    </div>
+</div>
+</body>
+</html>
